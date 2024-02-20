@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5802F6B52B509B5500888527 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5802F6B42B509B5500888527 /* FirebaseAuth */; };
+		5802F6B72B509B5500888527 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5802F6B62B509B5500888527 /* FirebaseDatabase */; };
+		5802F6B92B509B5500888527 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5802F6B82B509B5500888527 /* FirebaseFirestore */; };
+		5802F6BB2B509B5500888527 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 5802F6BA2B509B5500888527 /* FirebaseFunctions */; };
+		5802F6BD2B509B5500888527 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5802F6BC2B509B5500888527 /* FirebaseStorage */; };
+		5807FC452A598F6800C55FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5807FC442A598F6800C55FA1 /* AppDelegate.swift */; };
+		5807FC472A598F6800C55FA1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5807FC462A598F6800C55FA1 /* MainView.swift */; };
+		5807FC492A598F6900C55FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5807FC482A598F6900C55FA1 /* Assets.xcassets */; };
+		5807FC4C2A598F6900C55FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5807FC4A2A598F6900C55FA1 /* Main.storyboard */; };
+		580BE9042A77CD7900830456 /* AmazonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580BE9032A77CD7900830456 /* AmazonModel.swift */; };
+		5817CACE2B7B8997009FEC00 /* MeijerCoupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817CACD2B7B8997009FEC00 /* MeijerCoupons.swift */; };
+		5817CAD02B7B8DD3009FEC00 /* MeijerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817CACF2B7B8DD3009FEC00 /* MeijerAPI.swift */; };
+		5817CAD22B7B8EF1009FEC00 /* MeijerSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817CAD12B7B8EF1009FEC00 /* MeijerSupport.swift */; };
+		5817CAD42B7B8F13009FEC00 /* MeijerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817CAD32B7B8F13009FEC00 /* MeijerModel.swift */; };
+		58253C072B079283003045E8 /* PublixCoupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253C062B079283003045E8 /* PublixCoupons.swift */; };
+		58253C092B08CC9D003045E8 /* PublixModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253C082B08CC9D003045E8 /* PublixModel.swift */; };
+		58253C0B2B08D120003045E8 /* PublixSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58253C0A2B08D120003045E8 /* PublixSupporting.swift */; };
+		582DBD1B2AD94A440064589F /* DownloadImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DBD1A2AD94A440064589F /* DownloadImages.swift */; };
+		582DBD1D2AD94FCB0064589F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DBD1C2AD94FCB0064589F /* Navigation.swift */; };
+		583042B92B1221EA0079389A /* SaveHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583042B82B1221EA0079389A /* SaveHTML.swift */; };
+		58499E112B3B077100123B90 /* AlbertsonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58499E102B3B077100123B90 /* AlbertsonsModel.swift */; };
+		58499E132B3B088200123B90 /* AlbertsonsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58499E122B3B088200123B90 /* AlbertsonsSupport.swift */; };
+		587064B72B409E6700DC79E8 /* CVSCoupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587064B62B409E6700DC79E8 /* CVSCoupons.swift */; };
+		587064B92B40B86800DC79E8 /* CVSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587064B82B40B86800DC79E8 /* CVSAPI.swift */; };
+		587064BB2B40BBDB00DC79E8 /* CVSCouponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587064BA2B40BBDB00DC79E8 /* CVSCouponModel.swift */; };
+		587064BD2B42CDC200DC79E8 /* CVSSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587064BC2B42CDC200DC79E8 /* CVSSupporting.swift */; };
+		587064BF2B42D81200DC79E8 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587064BE2B42D81200DC79E8 /* DateFormatter.swift */; };
+		587810B02AF3C871009FD59B /* Amazon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587810AF2AF3C871009FD59B /* Amazon.swift */; };
+		587810B22AF3D01E009FD59B /* Walgreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587810B12AF3D01E009FD59B /* Walgreens.swift */; };
+		587810B52AF3D078009FD59B /* CouponPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587810B42AF3D078009FD59B /* CouponPage.swift */; };
+		587E01FD2B0B7AF500C892EC /* KrogerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587E01FC2B0B7AF500C892EC /* KrogerAPI.swift */; };
+		5882D8B32AEFC633007E6864 /* KrogerCoupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5882D8B22AEFC633007E6864 /* KrogerCoupons.swift */; };
+		58890A562B62A5F400087151 /* FirebaseSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58890A552B62A5F400087151 /* FirebaseSupport.swift */; };
+		58A2B05C2B516DF0003C7784 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58A2B05B2B516DF0003C7784 /* GoogleService-Info.plist */; };
+		58A42BF62B011107002ABA29 /* KrogerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A42BF52B011107002ABA29 /* KrogerModel.swift */; };
+		58B43FB92AEA675200CEBF31 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 58B43FB82AEA675200CEBF31 /* SwiftSoup */; };
+		58B43FBB2AEA676300CEBF31 /* ScrapCoupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B43FBA2AEA676300CEBF31 /* ScrapCoupons.swift */; };
+		58B43FBE2AEA803D00CEBF31 /* ScrapASINs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B43FBD2AEA803D00CEBF31 /* ScrapASINs.swift */; };
+		58BD7F282B039ACA00AE68D4 /* Supporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BD7F272B039ACA00AE68D4 /* Supporting.swift */; };
+		58CF2F642B5FA95300A3AD59 /* PDFConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF2F632B5FA95300A3AD59 /* PDFConverter.swift */; };
+		58D658E12A8A352900BAC0B3 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 58D658E02A8A352900BAC0B3 /* CryptoSwift */; };
+		58E4211A2ADD43E50028B2B5 /* ExtensionCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E421192ADD43E50028B2B5 /* ExtensionCharacterSet.swift */; };
+		58EB070C2B31BFF100B9CB48 /* AlbertsonsCoupons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB070B2B31BFF000B9CB48 /* AlbertsonsCoupons.swift */; };
+		58EB9EB92A59A8BE00140C6C /* ParseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB9EB82A59A8BE00140C6C /* ParseJson.swift */; };
+		58EB9EBB2A59A98B00140C6C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB9EBA2A59A98B00140C6C /* Model.swift */; };
+		58EB9EBD2A5C8F4F00140C6C /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EB9EBC2A5C8F4F00140C6C /* Convert.swift */; };
+		58EB9EC02A5C95AF00140C6C /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 58EB9EBF2A5C95AF00140C6C /* SwiftCSV */; };
+		58F839572AD2FE6E00803AF9 /* AmazonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F839562AD2FE6E00803AF9 /* AmazonAPI.swift */; };
+		58F8395A2AD4101F00803AF9 /* AWSAPIGateway in Frameworks */ = {isa = PBXBuildFile; productRef = 58F839592AD4101F00803AF9 /* AWSAPIGateway */; };
+		58F8395C2AD4101F00803AF9 /* AWSAmp in Frameworks */ = {isa = PBXBuildFile; productRef = 58F8395B2AD4101F00803AF9 /* AWSAmp */; };
+		58F8395E2AD4101F00803AF9 /* AWSAmplify in Frameworks */ = {isa = PBXBuildFile; productRef = 58F8395D2AD4101F00803AF9 /* AWSAmplify */; };
+		58F839602AD4101F00803AF9 /* AWSAmplifyBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 58F8395F2AD4101F00803AF9 /* AWSAmplifyBackend */; };
+		58F839622AD4101F00803AF9 /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 58F839612AD4101F00803AF9 /* AWSS3 */; };
+		58F839652AD419BD00803AF9 /* AWSLambda in Frameworks */ = {isa = PBXBuildFile; productRef = 58F839642AD419BD00803AF9 /* AWSLambda */; };
+		58F839672AD419C700803AF9 /* AWSMobile in Frameworks */ = {isa = PBXBuildFile; productRef = 58F839662AD419C700803AF9 /* AWSMobile */; };
+		58FD1EF82B1936B300376E82 /* WalgreensModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD1EF72B1936B300376E82 /* WalgreensModel.swift */; };
+		58FD1EFA2B19E6F600376E82 /* WalgreensAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD1EF92B19E6F600376E82 /* WalgreensAPI.swift */; };
+		58FD1EFC2B19EEF200376E82 /* WalgreensSupporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD1EFB2B19EEF200376E82 /* WalgreensSupporting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5807FC412A598F6800C55FA1 /* WalmartAdBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartAdBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5807FC442A598F6800C55FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5807FC462A598F6800C55FA1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5807FC482A598F6900C55FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5807FC4B2A598F6900C55FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5807FC4D2A598F6900C55FA1 /* WalmartAdBot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalmartAdBot.entitlements; sourceTree = "<group>"; };
+		580BE9032A77CD7900830456 /* AmazonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonModel.swift; sourceTree = "<group>"; };
+		5817CACD2B7B8997009FEC00 /* MeijerCoupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeijerCoupons.swift; sourceTree = "<group>"; };
+		5817CACF2B7B8DD3009FEC00 /* MeijerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeijerAPI.swift; sourceTree = "<group>"; };
+		5817CAD12B7B8EF1009FEC00 /* MeijerSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeijerSupport.swift; sourceTree = "<group>"; };
+		5817CAD32B7B8F13009FEC00 /* MeijerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeijerModel.swift; sourceTree = "<group>"; };
+		58253C062B079283003045E8 /* PublixCoupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublixCoupons.swift; sourceTree = "<group>"; };
+		58253C082B08CC9D003045E8 /* PublixModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublixModel.swift; sourceTree = "<group>"; };
+		58253C0A2B08D120003045E8 /* PublixSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublixSupporting.swift; sourceTree = "<group>"; };
+		582DBD1A2AD94A440064589F /* DownloadImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImages.swift; sourceTree = "<group>"; };
+		582DBD1C2AD94FCB0064589F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		583042B82B1221EA0079389A /* SaveHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveHTML.swift; sourceTree = "<group>"; };
+		5842736B2AF8FD3B00E92C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		58499E102B3B077100123B90 /* AlbertsonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonsModel.swift; sourceTree = "<group>"; };
+		58499E122B3B088200123B90 /* AlbertsonsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonsSupport.swift; sourceTree = "<group>"; };
+		587064B62B409E6700DC79E8 /* CVSCoupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSCoupons.swift; sourceTree = "<group>"; };
+		587064B82B40B86800DC79E8 /* CVSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSAPI.swift; sourceTree = "<group>"; };
+		587064BA2B40BBDB00DC79E8 /* CVSCouponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSCouponModel.swift; sourceTree = "<group>"; };
+		587064BC2B42CDC200DC79E8 /* CVSSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSSupporting.swift; sourceTree = "<group>"; };
+		587064BE2B42D81200DC79E8 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		587810AF2AF3C871009FD59B /* Amazon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amazon.swift; sourceTree = "<group>"; };
+		587810B12AF3D01E009FD59B /* Walgreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walgreens.swift; sourceTree = "<group>"; };
+		587810B42AF3D078009FD59B /* CouponPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponPage.swift; sourceTree = "<group>"; };
+		587E01FC2B0B7AF500C892EC /* KrogerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrogerAPI.swift; sourceTree = "<group>"; };
+		5882D8B22AEFC633007E6864 /* KrogerCoupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrogerCoupons.swift; sourceTree = "<group>"; };
+		58890A552B62A5F400087151 /* FirebaseSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSupport.swift; sourceTree = "<group>"; };
+		58A2B05B2B516DF0003C7784 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58A42BF52B011107002ABA29 /* KrogerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrogerModel.swift; sourceTree = "<group>"; };
+		58B43FBA2AEA676300CEBF31 /* ScrapCoupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapCoupons.swift; sourceTree = "<group>"; };
+		58B43FBD2AEA803D00CEBF31 /* ScrapASINs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapASINs.swift; sourceTree = "<group>"; };
+		58BD7F272B039ACA00AE68D4 /* Supporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supporting.swift; sourceTree = "<group>"; };
+		58CF2F632B5FA95300A3AD59 /* PDFConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFConverter.swift; sourceTree = "<group>"; };
+		58E421192ADD43E50028B2B5 /* ExtensionCharacterSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCharacterSet.swift; sourceTree = "<group>"; };
+		58EB070B2B31BFF000B9CB48 /* AlbertsonsCoupons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertsonsCoupons.swift; sourceTree = "<group>"; };
+		58EB9EB82A59A8BE00140C6C /* ParseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJson.swift; sourceTree = "<group>"; };
+		58EB9EBA2A59A98B00140C6C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		58EB9EBC2A5C8F4F00140C6C /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		58F839562AD2FE6E00803AF9 /* AmazonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonAPI.swift; sourceTree = "<group>"; };
+		58FD1EF72B1936B300376E82 /* WalgreensModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalgreensModel.swift; sourceTree = "<group>"; };
+		58FD1EF92B19E6F600376E82 /* WalgreensAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalgreensAPI.swift; sourceTree = "<group>"; };
+		58FD1EFB2B19EEF200376E82 /* WalgreensSupporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalgreensSupporting.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5807FC3E2A598F6800C55FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F839672AD419C700803AF9 /* AWSMobile in Frameworks */,
+				5802F6BB2B509B5500888527 /* FirebaseFunctions in Frameworks */,
+				5802F6B92B509B5500888527 /* FirebaseFirestore in Frameworks */,
+				58F839622AD4101F00803AF9 /* AWSS3 in Frameworks */,
+				58F8395A2AD4101F00803AF9 /* AWSAPIGateway in Frameworks */,
+				58D658E12A8A352900BAC0B3 /* CryptoSwift in Frameworks */,
+				58EB9EC02A5C95AF00140C6C /* SwiftCSV in Frameworks */,
+				58F8395E2AD4101F00803AF9 /* AWSAmplify in Frameworks */,
+				5802F6BD2B509B5500888527 /* FirebaseStorage in Frameworks */,
+				5802F6B72B509B5500888527 /* FirebaseDatabase in Frameworks */,
+				58F839652AD419BD00803AF9 /* AWSLambda in Frameworks */,
+				5802F6B52B509B5500888527 /* FirebaseAuth in Frameworks */,
+				58F839602AD4101F00803AF9 /* AWSAmplifyBackend in Frameworks */,
+				58F8395C2AD4101F00803AF9 /* AWSAmp in Frameworks */,
+				58B43FB92AEA675200CEBF31 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5807FC382A598F6800C55FA1 = {
+			isa = PBXGroup;
+			children = (
+				5807FC432A598F6800C55FA1 /* WalmartAdBot */,
+				5807FC422A598F6800C55FA1 /* Products */,
+				58F839632AD419BD00803AF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5807FC422A598F6800C55FA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5807FC412A598F6800C55FA1 /* WalmartAdBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5807FC432A598F6800C55FA1 /* WalmartAdBot */ = {
+			isa = PBXGroup;
+			children = (
+				58CF2F622B5FA93F00A3AD59 /* PDFToJPG */,
+				5842736B2AF8FD3B00E92C97 /* Info.plist */,
+				58A2B05B2B516DF0003C7784 /* GoogleService-Info.plist */,
+				58B43FBC2AEA689900CEBF31 /* Support */,
+				582DBD192AD94A1E0064589F /* DownloadImages */,
+				58EB9EB72A59A8B000140C6C /* Supermarkets */,
+				5807FC442A598F6800C55FA1 /* AppDelegate.swift */,
+				5807FC462A598F6800C55FA1 /* MainView.swift */,
+				58EB9EBA2A59A98B00140C6C /* Model.swift */,
+				5807FC482A598F6900C55FA1 /* Assets.xcassets */,
+				5807FC4A2A598F6900C55FA1 /* Main.storyboard */,
+				5807FC4D2A598F6900C55FA1 /* WalmartAdBot.entitlements */,
+				582DBD1C2AD94FCB0064589F /* Navigation.swift */,
+			);
+			path = WalmartAdBot;
+			sourceTree = "<group>";
+		};
+		5817CACC2B7B8985009FEC00 /* Meijer */ = {
+			isa = PBXGroup;
+			children = (
+				5817CACD2B7B8997009FEC00 /* MeijerCoupons.swift */,
+				5817CACF2B7B8DD3009FEC00 /* MeijerAPI.swift */,
+				5817CAD12B7B8EF1009FEC00 /* MeijerSupport.swift */,
+				5817CAD32B7B8F13009FEC00 /* MeijerModel.swift */,
+			);
+			path = Meijer;
+			sourceTree = "<group>";
+		};
+		58253C052B079265003045E8 /* Publix */ = {
+			isa = PBXGroup;
+			children = (
+				58253C062B079283003045E8 /* PublixCoupons.swift */,
+				58253C082B08CC9D003045E8 /* PublixModel.swift */,
+				58253C0A2B08D120003045E8 /* PublixSupporting.swift */,
+			);
+			path = Publix;
+			sourceTree = "<group>";
+		};
+		582DBD192AD94A1E0064589F /* DownloadImages */ = {
+			isa = PBXGroup;
+			children = (
+				582DBD1A2AD94A440064589F /* DownloadImages.swift */,
+			);
+			path = DownloadImages;
+			sourceTree = "<group>";
+		};
+		587064B52B409E5E00DC79E8 /* CVS */ = {
+			isa = PBXGroup;
+			children = (
+				587064B62B409E6700DC79E8 /* CVSCoupons.swift */,
+				587064B82B40B86800DC79E8 /* CVSAPI.swift */,
+				587064BA2B40BBDB00DC79E8 /* CVSCouponModel.swift */,
+				587064BC2B42CDC200DC79E8 /* CVSSupporting.swift */,
+			);
+			path = CVS;
+			sourceTree = "<group>";
+		};
+		587810B32AF3D06D009FD59B /* CouponPage */ = {
+			isa = PBXGroup;
+			children = (
+				5817CACC2B7B8985009FEC00 /* Meijer */,
+				587810B42AF3D078009FD59B /* CouponPage.swift */,
+				587064B52B409E5E00DC79E8 /* CVS */,
+				58EB070A2B31BE7C00B9CB48 /* Albertsons */,
+				58FD1EF62B1936A700376E82 /* Walgreens */,
+				58253C052B079265003045E8 /* Publix */,
+				58A42BF42B0110F8002ABA29 /* Kroger */,
+			);
+			path = CouponPage;
+			sourceTree = "<group>";
+		};
+		5882D8B12AEFC4CF007E6864 /* Coupons */ = {
+			isa = PBXGroup;
+			children = (
+				587810B32AF3D06D009FD59B /* CouponPage */,
+			);
+			path = Coupons;
+			sourceTree = "<group>";
+		};
+		58A42BF42B0110F8002ABA29 /* Kroger */ = {
+			isa = PBXGroup;
+			children = (
+				58A42BF52B011107002ABA29 /* KrogerModel.swift */,
+				5882D8B22AEFC633007E6864 /* KrogerCoupons.swift */,
+				58BD7F272B039ACA00AE68D4 /* Supporting.swift */,
+				587E01FC2B0B7AF500C892EC /* KrogerAPI.swift */,
+			);
+			path = Kroger;
+			sourceTree = "<group>";
+		};
+		58B43FBC2AEA689900CEBF31 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				58E421192ADD43E50028B2B5 /* ExtensionCharacterSet.swift */,
+				58EB9EBC2A5C8F4F00140C6C /* Convert.swift */,
+				58EB9EB82A59A8BE00140C6C /* ParseJson.swift */,
+				583042B82B1221EA0079389A /* SaveHTML.swift */,
+				587064BE2B42D81200DC79E8 /* DateFormatter.swift */,
+				58890A552B62A5F400087151 /* FirebaseSupport.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		58C6AF582A7914DF0057E579 /* Amazon */ = {
+			isa = PBXGroup;
+			children = (
+				580BE9032A77CD7900830456 /* AmazonModel.swift */,
+				58F839562AD2FE6E00803AF9 /* AmazonAPI.swift */,
+				58B43FBA2AEA676300CEBF31 /* ScrapCoupons.swift */,
+				58B43FBD2AEA803D00CEBF31 /* ScrapASINs.swift */,
+				587810AF2AF3C871009FD59B /* Amazon.swift */,
+			);
+			path = Amazon;
+			sourceTree = "<group>";
+		};
+		58CF2F622B5FA93F00A3AD59 /* PDFToJPG */ = {
+			isa = PBXGroup;
+			children = (
+				58CF2F632B5FA95300A3AD59 /* PDFConverter.swift */,
+			);
+			path = PDFToJPG;
+			sourceTree = "<group>";
+		};
+		58EB070A2B31BE7C00B9CB48 /* Albertsons */ = {
+			isa = PBXGroup;
+			children = (
+				58EB070B2B31BFF000B9CB48 /* AlbertsonsCoupons.swift */,
+				58499E102B3B077100123B90 /* AlbertsonsModel.swift */,
+				58499E122B3B088200123B90 /* AlbertsonsSupport.swift */,
+			);
+			path = Albertsons;
+			sourceTree = "<group>";
+		};
+		58EB9EB72A59A8B000140C6C /* Supermarkets */ = {
+			isa = PBXGroup;
+			children = (
+				5882D8B12AEFC4CF007E6864 /* Coupons */,
+				58C6AF582A7914DF0057E579 /* Amazon */,
+			);
+			path = Supermarkets;
+			sourceTree = "<group>";
+		};
+		58F839632AD419BD00803AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58FD1EF62B1936A700376E82 /* Walgreens */ = {
+			isa = PBXGroup;
+			children = (
+				58FD1EF72B1936B300376E82 /* WalgreensModel.swift */,
+				587810B12AF3D01E009FD59B /* Walgreens.swift */,
+				58FD1EF92B19E6F600376E82 /* WalgreensAPI.swift */,
+				58FD1EFB2B19EEF200376E82 /* WalgreensSupporting.swift */,
+			);
+			path = Walgreens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5807FC402A598F6800C55FA1 /* WalmartAdBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5807FC502A598F6900C55FA1 /* Build configuration list for PBXNativeTarget "WalmartAdBot" */;
+			buildPhases = (
+				5807FC3D2A598F6800C55FA1 /* Sources */,
+				5807FC3E2A598F6800C55FA1 /* Frameworks */,
+				5807FC3F2A598F6800C55FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalmartAdBot;
+			packageProductDependencies = (
+				58EB9EBF2A5C95AF00140C6C /* SwiftCSV */,
+				58D658E02A8A352900BAC0B3 /* CryptoSwift */,
+				58F839592AD4101F00803AF9 /* AWSAPIGateway */,
+				58F8395B2AD4101F00803AF9 /* AWSAmp */,
+				58F8395D2AD4101F00803AF9 /* AWSAmplify */,
+				58F8395F2AD4101F00803AF9 /* AWSAmplifyBackend */,
+				58F839612AD4101F00803AF9 /* AWSS3 */,
+				58F839642AD419BD00803AF9 /* AWSLambda */,
+				58F839662AD419C700803AF9 /* AWSMobile */,
+				58B43FB82AEA675200CEBF31 /* SwiftSoup */,
+				5802F6B42B509B5500888527 /* FirebaseAuth */,
+				5802F6B62B509B5500888527 /* FirebaseDatabase */,
+				5802F6B82B509B5500888527 /* FirebaseFirestore */,
+				5802F6BA2B509B5500888527 /* FirebaseFunctions */,
+				5802F6BC2B509B5500888527 /* FirebaseStorage */,
+			);
+			productName = WalmartAdBot;
+			productReference = 5807FC412A598F6800C55FA1 /* WalmartAdBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5807FC392A598F6800C55FA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5807FC402A598F6800C55FA1 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 5807FC3C2A598F6800C55FA1 /* Build configuration list for PBXProject "WalmartAdBot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5807FC382A598F6800C55FA1;
+			packageReferences = (
+				58EB9EBE2A5C95AF00140C6C /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+				58D658DF2A8A352900BAC0B3 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+				58B43FB72AEA675200CEBF31 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 5807FC422A598F6800C55FA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5807FC402A598F6800C55FA1 /* WalmartAdBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5807FC3F2A598F6800C55FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5807FC492A598F6900C55FA1 /* Assets.xcassets in Resources */,
+				5807FC4C2A598F6900C55FA1 /* Main.storyboard in Resources */,
+				58A2B05C2B516DF0003C7784 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5807FC3D2A598F6800C55FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587064BB2B40BBDB00DC79E8 /* CVSCouponModel.swift in Sources */,
+				58FD1EF82B1936B300376E82 /* WalgreensModel.swift in Sources */,
+				5807FC472A598F6800C55FA1 /* MainView.swift in Sources */,
+				587810B52AF3D078009FD59B /* CouponPage.swift in Sources */,
+				580BE9042A77CD7900830456 /* AmazonModel.swift in Sources */,
+				587810B22AF3D01E009FD59B /* Walgreens.swift in Sources */,
+				58890A562B62A5F400087151 /* FirebaseSupport.swift in Sources */,
+				58F839572AD2FE6E00803AF9 /* AmazonAPI.swift in Sources */,
+				587064B92B40B86800DC79E8 /* CVSAPI.swift in Sources */,
+				58499E112B3B077100123B90 /* AlbertsonsModel.swift in Sources */,
+				58EB9EBD2A5C8F4F00140C6C /* Convert.swift in Sources */,
+				58E4211A2ADD43E50028B2B5 /* ExtensionCharacterSet.swift in Sources */,
+				5882D8B32AEFC633007E6864 /* KrogerCoupons.swift in Sources */,
+				5807FC452A598F6800C55FA1 /* AppDelegate.swift in Sources */,
+				58253C072B079283003045E8 /* PublixCoupons.swift in Sources */,
+				587064B72B409E6700DC79E8 /* CVSCoupons.swift in Sources */,
+				583042B92B1221EA0079389A /* SaveHTML.swift in Sources */,
+				5817CAD42B7B8F13009FEC00 /* MeijerModel.swift in Sources */,
+				58EB9EB92A59A8BE00140C6C /* ParseJson.swift in Sources */,
+				582DBD1B2AD94A440064589F /* DownloadImages.swift in Sources */,
+				58EB070C2B31BFF100B9CB48 /* AlbertsonsCoupons.swift in Sources */,
+				58A42BF62B011107002ABA29 /* KrogerModel.swift in Sources */,
+				582DBD1D2AD94FCB0064589F /* Navigation.swift in Sources */,
+				58FD1EFA2B19E6F600376E82 /* WalgreensAPI.swift in Sources */,
+				58B43FBE2AEA803D00CEBF31 /* ScrapASINs.swift in Sources */,
+				587810B02AF3C871009FD59B /* Amazon.swift in Sources */,
+				587064BF2B42D81200DC79E8 /* DateFormatter.swift in Sources */,
+				5817CACE2B7B8997009FEC00 /* MeijerCoupons.swift in Sources */,
+				58B43FBB2AEA676300CEBF31 /* ScrapCoupons.swift in Sources */,
+				58BD7F282B039ACA00AE68D4 /* Supporting.swift in Sources */,
+				58499E132B3B088200123B90 /* AlbertsonsSupport.swift in Sources */,
+				58CF2F642B5FA95300A3AD59 /* PDFConverter.swift in Sources */,
+				58253C0B2B08D120003045E8 /* PublixSupporting.swift in Sources */,
+				5817CAD02B7B8DD3009FEC00 /* MeijerAPI.swift in Sources */,
+				587E01FD2B0B7AF500C892EC /* KrogerAPI.swift in Sources */,
+				5817CAD22B7B8EF1009FEC00 /* MeijerSupport.swift in Sources */,
+				58253C092B08CC9D003045E8 /* PublixModel.swift in Sources */,
+				58EB9EBB2A59A98B00140C6C /* Model.swift in Sources */,
+				58FD1EFC2B19EEF200376E82 /* WalgreensSupporting.swift in Sources */,
+				587064BD2B42CDC200DC79E8 /* CVSSupporting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5807FC4A2A598F6900C55FA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5807FC4B2A598F6900C55FA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5807FC4E2A598F6900C55FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5807FC4F2A598F6900C55FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5807FC512A598F6900C55FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WalmartAdBot/WalmartAdBot.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36LWVJ2THH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalmartAdBot/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emirhan.WalmardAdBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5807FC522A598F6900C55FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WalmartAdBot/WalmartAdBot.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36LWVJ2THH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalmartAdBot/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emirhan.WalmardAdBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5807FC3C2A598F6800C55FA1 /* Build configuration list for PBXProject "WalmartAdBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5807FC4E2A598F6900C55FA1 /* Debug */,
+				5807FC4F2A598F6900C55FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5807FC502A598F6900C55FA1 /* Build configuration list for PBXNativeTarget "WalmartAdBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5807FC512A598F6900C55FA1 /* Debug */,
+				5807FC522A598F6900C55FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		58B43FB72AEA675200CEBF31 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		58D658DF2A8A352900BAC0B3 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		58EB9EBE2A5C95AF00140C6C /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5802F6B42B509B5500888527 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5802F6B62B509B5500888527 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5802F6B82B509B5500888527 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5802F6BA2B509B5500888527 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		5802F6BC2B509B5500888527 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5802F6B32B509B5400888527 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		58B43FB82AEA675200CEBF31 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B43FB72AEA675200CEBF31 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		58D658E02A8A352900BAC0B3 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58D658DF2A8A352900BAC0B3 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		58EB9EBF2A5C95AF00140C6C /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58EB9EBE2A5C95AF00140C6C /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+		58F839592AD4101F00803AF9 /* AWSAPIGateway */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSAPIGateway;
+		};
+		58F8395B2AD4101F00803AF9 /* AWSAmp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSAmp;
+		};
+		58F8395D2AD4101F00803AF9 /* AWSAmplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSAmplify;
+		};
+		58F8395F2AD4101F00803AF9 /* AWSAmplifyBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSAmplifyBackend;
+		};
+		58F839612AD4101F00803AF9 /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
+		};
+		58F839642AD419BD00803AF9 /* AWSLambda */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSLambda;
+		};
+		58F839662AD419C700803AF9 /* AWSMobile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F839582AD4101F00803AF9 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSMobile;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5807FC392A598F6800C55FA1 /* Project object */;
+}
